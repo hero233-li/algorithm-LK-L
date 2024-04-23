@@ -8,6 +8,7 @@ const removeDuplicates=(nums)=>{
         }
         left++, right++
     }
-    console.log(nums)
+    console.log(left,nums)
+    return nums.length
 }
 removeDuplicates(nums)
