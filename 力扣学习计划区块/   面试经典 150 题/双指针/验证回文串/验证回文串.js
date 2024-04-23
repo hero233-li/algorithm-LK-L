@@ -14,7 +14,7 @@ const isPalindrome1=str=> {
         console.log(newStr[reverseKey])
     }
 }
- isPalindrome1(str)
+ // isPalindrome1(str)
 
 //方法二、双指针，将字符串预处理后，设置指针，对处理后的字符串首尾比较，直到两个指针靠拢为止，
 const isPalindrome2=str=> {
