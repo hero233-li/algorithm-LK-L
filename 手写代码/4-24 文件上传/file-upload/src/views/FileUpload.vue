@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SingleFile from "@/components/FileUpload/singleFile.vue";
+import MultiFile from "@/components/FileUpload/multiFile.vue";
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import SingleFile from "@/components/FileUpload/singleFile.vue";
     }"
   >
     <single-file />
+    <multi-file />
   </div>
 </template>
 

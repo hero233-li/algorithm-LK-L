@@ -20,6 +20,7 @@ declare module '@vue/runtime-core' {
     AProgress: typeof import('@arco-design/web-vue')['Progress']
     ASpace: typeof import('@arco-design/web-vue')['Space']
     GlobalHeader: typeof import('./src/components/GlobalHeader.vue')['default']
+    MultiFile: typeof import('./src/components/FileUpload/multiFile.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SingleFile: typeof import('./src/components/FileUpload/singleFile.vue')['default']
