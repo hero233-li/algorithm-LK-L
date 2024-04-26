@@ -9,15 +9,19 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    ADatePicker: typeof import('@arco-design/web-vue')['DatePicker']
+    AButton: typeof import('@arco-design/web-vue')['Button']
+    ACard: typeof import('@arco-design/web-vue')['Card']
     ALayout: typeof import('@arco-design/web-vue')['Layout']
     ALayoutContent: typeof import('@arco-design/web-vue')['LayoutContent']
     ALayoutFooter: typeof import('@arco-design/web-vue')['LayoutFooter']
     ALayoutHeader: typeof import('@arco-design/web-vue')['LayoutHeader']
     AMenu: typeof import('@arco-design/web-vue')['Menu']
     AMenuItem: typeof import('@arco-design/web-vue')['MenuItem']
+    AProgress: typeof import('@arco-design/web-vue')['Progress']
+    ASpace: typeof import('@arco-design/web-vue')['Space']
     GlobalHeader: typeof import('./src/components/GlobalHeader.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SingleFile: typeof import('./src/components/FileUpload/singleFile.vue')['default']
   }
 }
