@@ -15,9 +15,14 @@
           >提交</a-button
         >
       </a-space>
-      <div style="display: flex; align-items: center">
-        {{ fileName }}
-        <a-progress type="circle" size="small" :percent="percent" />
+      <div style="display: flex; align-items: center; justify-content: center">
+        <span style="flex: 1">{{ fileName }}</span>
+        <a-progress
+          type="circle"
+          size="small"
+          :percent="percent"
+          v-if="fileName"
+        />
       </div>
     </a-card>
   </div>
@@ -46,7 +51,7 @@ const submitFile = async () => {
     _fromData.append(fileObj.name, fileObj.slice(current, current + size));
     await axios.post("http://localhost:4000/postUpload");
     FileSize > size
-      ? (percent.value = Math.min(100, Math.round((current / FileSize) * 100)))
+      ? (percent.value = Math.min(100, Math.round((current / FileSize) * 10)))
       : (percent.value = 100);
     current += size;
   }
